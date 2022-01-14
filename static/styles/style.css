@@ -1,0 +1,197 @@
+:root{
+    --main-bg-color:transparent !important;
+    --border-color: white;
+    --container-width: 456px;
+    --icon-container-color:rgb(13, 252, 252);
+}
+body, html{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background: #1F1C2C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #928DAB, #1F1C2C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #928DAB, #1F1C2C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    height: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+.background{
+    width: 100%;
+    height: 100%;
+}
+body, .drop-zone, .upload-files{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.upload-files{
+    background-color:white;
+    border-radius: 25px;
+    box-shadow: 0 20px 20px #0000002e;
+    width: 511px;
+    height: 406px;
+    position: center;
+    margin-left: -400px;
+    margin-top: 150px
+}
+
+.drop-zone{
+    width: var(--container-width);
+    min-height: 290px;
+    border:2px dashed var(--icon-container-color);
+    margin: 25px;
+    border-radius: 10px;
+    transition: all .2s ease;
+
+}
+.dragged.drop-zone.upload-files{
+    background: #d8e2e6;
+}
+.icon-container{
+    width:75px;
+    height:100px;
+    position: relative;
+}
+
+.icon-container img{
+    width: 73px;
+    position: absolute;
+    margin-left: -118px;
+    margin-top: -55px;
+    transform-origin: bottom;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
+}
+
+.icon-container .center{
+    z-index: 2;
+}
+.droping{
+    margin-left: -250px;
+    color: rgb(17 18 18 / 80%);
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: -90px;
+}
+.browseButton{
+    color:rgb(47, 146, 240);
+    cursor: pointer;
+}
+.icon-container .left, .right{
+    filter: grayscale(50%);
+    /* transform: scale(.5); */
+}
+
+.dragged .icon-container .right{
+    transform: rotate(15deg) translateX(60px);
+    
+    
+}
+
+.dragged .icon-container .left{
+    transform: rotate(-15deg) translateX(-60px);
+    
+}
+.dragged .icon-container .center{
+    transform: translateY(-10px);
+}
+
+
+.login, .signup{
+    color: #111111 !important;
+    background-color: #f2f2f2 !important;
+    border-color: #478ac9 !important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 7px;
+    text-align: justify;
+    font-style: oblique;
+    text-decoration: none;
+    box-shadow: 0 20px 20px #0000002e;
+}
+
+.createaccount{
+    margin-top: 100px;
+    margin-left: 763px;
+    margin-top: -74px;
+}
+
+.inputbtn{
+       
+        background-color: #a6f3fd;
+        border-radius: 5px;
+        border-color: #a6f3fd;
+        height: 27px;
+        width: 70px;
+        font-family:Georgia, 'Times New Roman', Times, serif,'bold';
+        color: rgb(39, 38, 38);
+        
+}
+
+.or{
+    margin-left: -255px;
+}
+
+.inputTab{
+    margin-right: 32px;
+    margin-left: -127px;
+    background-color: rgb(116 150 152 / 80%);
+    border-radius: 5px;
+    border-color: rgb(116 150 152 / 80%);
+    height: 29px;
+    width: 192px;
+    font-family: Georgia, 'Times New Roman', Times, serif,'bold';
+    color: white;
+    
+    padding-top: 3px;
+    padding-left: 9px;
+}
+
+.description{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.btn{
+    color: #111111 !important;
+    background-color: #f2f2f2 !important;
+    border-color: #fdfdfd !important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 7px;
+    text-align: justify;
+    /* font-style: oblique; */
+    text-decoration: none;
+    margin-left: -108px;
+    margin-top: -24px;
+    padding-bottom: 7px;
+    padding-right: 19px;
+    box-shadow: 0 20px 20px #0000002e;
+    text-align: center;
+    padding-inline: revert;
+
+    font-family: cursive;
+    width: 100;
+    height: fit-content;
+}
+
+.logoutt{
+    color: #111111 !important;
+    background-color: #f2f2f2 !important;
+    border-color: #fdfdfd !important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 7px;
+    text-align: justify;
+    /* font-style: oblique; */
+    text-decoration: none;
+    margin-left: 9px;
+    margin-bottom: -21px;
+    padding-bottom: 7px;
+    padding-right: 19px;
+    box-shadow: 0 20px 20px #0000002e;
+    text-align: center;
+    padding-inline: revert;
+    font-family: cursive;
+    width: 100;
+    height: fit-content;
+}

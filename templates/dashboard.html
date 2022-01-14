@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Share - Smart Sharing</title>
+  <link rel="stylesheet" href="../static/styles/style.css">
+
+</head>
+<body style="
+background: #005AA7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+">
+     <section class="createaccount">
+          <div class="account-container">
+          <form action="/logout" method="POST">
+            <button class="logoutt" type="submit">Log out</button>
+          </form>  
+          <div class="search">
+            <form action="/search" method="POST">
+              <!-- <input type="text" placeholder="Search" name="search" id="search"> -->
+              <button class="btn"type="submit" placeholder="Submit" name="search">Downloads</button>
+            </form>
+          </div>
+              
+          
+          
+         
+          </div>
+     </section>
+</section>
+    
+<section class="upload-files">
+  <div class="drop-zone">
+    <div class="icon-container">
+      <img src="../static/styles/image2vector.svg" alt="file icon" class="center" draggable="false">
+      <img src="../static/styles/image2vector.svg" alt="file icon" class="left" draggable="false">
+      <img src="../static/styles/image2vector.svg" alt="file icon" class="right" draggable="false">
+    </div>
+          <form action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" id="fileInput" name=fileinput class=inputTab>
+
+
+            <button class="inputBtn" type="submit">Submit</button>
+            <!-- <div class="createnew">
+
+            </div> -->
+
+
+
+          </form>
+
+        <div class="droping">Drag and drop</div>
+        <div class="or">or</div>
+
+      </div>
+      <a href="/create">Not a member? Create account</a>
+    </section>
+
+    <script src="../static/index.js"></script>
+
+</body>
+</html>
+          
