@@ -1,7 +1,6 @@
 import pymongo
 import bcrypt
-from flask_login import logout_user
-import pprint
+
 
 from flask import Flask,render_template,request,url_for, redirect, session
 from flask_pymongo import PyMongo
